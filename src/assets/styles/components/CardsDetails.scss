@@ -15,17 +15,19 @@
 }
 
 .card_title {
-	color: white;
+	color: black;
     font-weight: bold;
 	font-size: 18px;
-	margin: 0
+	margin: 14px;
 }
 
 .card_value {
-	color: white;
+	color: black;
+	width: 250px;
     font-weight: bold;
-	font-size: 38px;
+	font-size: 23px;
 	margin: 5px;
+	margin-left: -31px;
 	text-transform: capitalize
 }
 
@@ -38,7 +40,7 @@
  .circle {
 	position: relative;
 	background:transparent;
-	border: 3px solid #eed09d;
+	border: 2px solid ;
   }
 
   .circle svg {
@@ -56,6 +58,17 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+  }
+  .card ul {
+    list-style-type: none;
+  }
+  
+  .card li {
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 1em 0 0;
+	padding-top: 64px;
   }
   @keyframes stroke-draw {
 	from {

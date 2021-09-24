@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* este archivo es una mejor forma de trabajar nuestros componetentes,
 ya que aqui los estamos conteniendo en un contenedor
 */
@@ -10,7 +11,6 @@ import React from 'react';
 import About from '../components/About';
 import Card from '../components/Card';
 import CardsDetails from '../components/CardsDetails';
-import CardsUserData from '../components/CardsUserData';
 import CardsSocial from '../components/CardsSocial';
 import '../assets/styles/App.scss';
 
@@ -19,7 +19,6 @@ const App = () => {
     <About>
       <Card>
         <CardsDetails />
-        <CardsUserData />
         <CardsSocial />
       </Card>
     </About>

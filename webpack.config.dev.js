@@ -5,6 +5,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssEstractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 
 /* creamos un nuevo modulo que vamos a exportar con esta configuracion */
@@ -78,6 +79,7 @@ module.exports = {
         },
       ],
     }),
+    new Dotenv(),
   ],
 
 };

@@ -8,6 +8,7 @@ const MiniCssEstractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 /* creamos un nuevo modulo que vamos a exportar con esta configuracion */
 
@@ -71,6 +72,7 @@ module.exports = {
       filename: 'assets/styles/[name].css',
     }),
     new CleanWebpackPlugin(),
+    new Dotenv(),
   ],
 
   optimization: {
